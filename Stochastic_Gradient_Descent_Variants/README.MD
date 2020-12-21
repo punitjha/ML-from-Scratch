@@ -1,15 +1,7 @@
 We implement SGD with Momentum or Nesterov Accelerated Gradient, and Adam to estimate the parameters of a logistic regression model, and 
 empirically compare their performance. 
 
-Consider a dataset with $$N$$ samples, $$D = \{(x^{(i)}, y^{(i)})\}^N_{i = 1}$$, where x^{(i)} \in \mathbb{R}^2 and y^{(i)} \in \{-1, +1\}. We will fit a logistic regression model:
-```math
-p(y^{(i)}| x^{(i)}) = \sigma(y^{(i)} w^T x^{(i)}),
-where \sigma is the sigmoid function defined as:
-\sigma (z) = \frac{1}{1 + \exp(- z)}.
-```
-
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=D&space;=&space;\{(x^{(i)},&space;y^{(i)})\}^N_{i&space;=&space;1},&space;\text{where}&space;\;&space;x^{(i)}&space;\in&space;\mathbb{R}^2&space;\;&space;\text{and}&space;\;&space;y^{(i)}&space;\in&space;\{-1,&space;&plus;1\}.&space;\text{We&space;will&space;fit&space;a&space;logistic&space;regression&space;model}:\\&space;p(y^{(i)}|&space;x^{(i)})&space;=&space;\sigma(y^{(i)}&space;w^T&space;x^{(i)})," target="_blank"><img src="https://latex.codecogs.com/gif.latex?D&space;=&space;\{(x^{(i)},&space;y^{(i)})\}^N_{i&space;=&space;1},&space;\text{where}&space;\;&space;x^{(i)}&space;\in&space;\mathbb{R}^2&space;\;&space;\text{and}&space;\;&space;y^{(i)}&space;\in&space;\{-1,&space;&plus;1\}.&space;\text{We&space;will&space;fit&space;a&space;logistic&space;regression&space;model}:\\&space;p(y^{(i)}|&space;x^{(i)})&space;=&space;\sigma(y^{(i)}&space;w^T&space;x^{(i)})," title="D = \{(x^{(i)}, y^{(i)})\}^N_{i = 1}, \text{where} \; x^{(i)} \in \mathbb{R}^2 \; \text{and} \; y^{(i)} \in \{-1, +1\}. \text{We will fit a logistic regression model}:\\ p(y^{(i)}| x^{(i)}) = \sigma(y^{(i)} w^T x^{(i)})," /></a>
+Consider a dataset with $$N$$ samples, <a href="https://www.codecogs.com/eqnedit.php?latex=D&space;=&space;\{(x^{(i)},&space;y^{(i)})\}^N_{i&space;=&space;1},&space;\text{where}&space;\;&space;x^{(i)}&space;\in&space;\mathbb{R}^2&space;\;&space;\text{and}&space;\;&space;y^{(i)}&space;\in&space;\{-1,&space;&plus;1\}.&space;\text{We&space;will&space;fit&space;a&space;logistic&space;regression&space;model}:\\&space;p(y^{(i)}|&space;x^{(i)})&space;=&space;\sigma(y^{(i)}&space;w^T&space;x^{(i)})," target="_blank"><img src="https://latex.codecogs.com/gif.latex?D&space;=&space;\{(x^{(i)},&space;y^{(i)})\}^N_{i&space;=&space;1},&space;\text{where}&space;\;&space;x^{(i)}&space;\in&space;\mathbb{R}^2&space;\;&space;\text{and}&space;\;&space;y^{(i)}&space;\in&space;\{-1,&space;&plus;1\}.&space;\text{We&space;will&space;fit&space;a&space;logistic&space;regression&space;model}:\\&space;p(y^{(i)}|&space;x^{(i)})&space;=&space;\sigma(y^{(i)}&space;w^T&space;x^{(i)})," title="D = \{(x^{(i)}, y^{(i)})\}^N_{i = 1}, \text{where} \; x^{(i)} \in \mathbb{R}^2 \; \text{and} \; y^{(i)} \in \{-1, +1\}. \text{We will fit a logistic regression model}:\\ p(y^{(i)}| x^{(i)}) = \sigma(y^{(i)} w^T x^{(i)})," /></a>
 
 The problem can then be solved by minimizing the negative log likelihood. Recall (from class) that this results in the logistic loss function :
 L(w) = \frac{1}{N} \sum_{(x^{(i)}, y^{(i)}) \in D} \log(1 + \exp(-y^{(i)} w^Tx^{(i)})).
