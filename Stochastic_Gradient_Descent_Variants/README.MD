@@ -1,7 +1,7 @@
 We implement SGD with Momentum or Nesterov Accelerated Gradient, and Adam to estimate the parameters of a logistic regression model, and 
 empirically compare their performance. 
 
-Consider a dataset with N samples, D = \{(x^{(i)}, y^{(i)})\}^N_{i = 1}, where x^{(i)} \in \mathbb{R}^2 and y^{(i)} \in \{-1, +1\}. We will fit a logistic regression model:
+Consider a dataset with $$N$$ samples, $$D = \{(x^{(i)}, y^{(i)})\}^N_{i = 1}$$, where x^{(i)} \in \mathbb{R}^2 and y^{(i)} \in \{-1, +1\}. We will fit a logistic regression model:
 p(y^{(i)}| x^{(i)}) = \sigma(y^{(i)} w^T x^{(i)}),
 where \sigma is the sigmoid function defined as:
 \sigma (z) = \frac{1}{1 + \exp(- z)}.
