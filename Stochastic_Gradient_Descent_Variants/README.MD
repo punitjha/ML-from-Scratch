@@ -2,10 +2,11 @@ We implement SGD with Momentum or Nesterov Accelerated Gradient, and Adam to est
 empirically compare their performance. 
 
 Consider a dataset with $$N$$ samples, $$D = \{(x^{(i)}, y^{(i)})\}^N_{i = 1}$$, where x^{(i)} \in \mathbb{R}^2 and y^{(i)} \in \{-1, +1\}. We will fit a logistic regression model:
+```math
 p(y^{(i)}| x^{(i)}) = \sigma(y^{(i)} w^T x^{(i)}),
 where \sigma is the sigmoid function defined as:
 \sigma (z) = \frac{1}{1 + \exp(- z)}.
-
+```
 The problem can then be solved by minimizing the negative log likelihood. Recall (from class) that this results in the logistic loss function :
 L(w) = \frac{1}{N} \sum_{(x^{(i)}, y^{(i)}) \in D} \log(1 + \exp(-y^{(i)} w^Tx^{(i)})).
 We are interested in estimating w^* such that:
