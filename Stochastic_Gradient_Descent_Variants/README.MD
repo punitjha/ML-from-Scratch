@@ -4,56 +4,6 @@ empirically compare their performance.
 Consider a dataset with $$N$$ samples, <a href="https://www.codecogs.com/eqnedit.php?latex=D&space;=&space;\{(x^{(i)},&space;y^{(i)})\}^N_{i&space;=&space;1},&space;\text{where}&space;\;&space;x^{(i)}&space;\in&space;\mathbb{R}^2&space;\;&space;\text{and}&space;\;&space;y^{(i)}&space;\in&space;\{-1,&space;&plus;1\}.&space;\text{We&space;will&space;fit&space;a&space;logistic&space;regression&space;model}:\\&space;p(y^{(i)}|&space;x^{(i)})&space;=&space;\sigma(y^{(i)}&space;w^T&space;x^{(i)})," target="_blank"><img src="https://latex.codecogs.com/gif.latex?D&space;=&space;\{(x^{(i)},&space;y^{(i)})\}^N_{i&space;=&space;1},&space;\text{where}&space;\;&space;x^{(i)}&space;\in&space;\mathbb{R}^2&space;\;&space;\text{and}&space;\;&space;y^{(i)}&space;\in&space;\{-1,&space;&plus;1\}.&space;\text{We&space;will&space;fit&space;a&space;logistic&space;regression&space;model}:\\&space;p(y^{(i)}|&space;x^{(i)})&space;=&space;\sigma(y^{(i)}&space;w^T&space;x^{(i)})," title="D = \{(x^{(i)}, y^{(i)})\}^N_{i = 1}, \text{where} \; x^{(i)} \in \mathbb{R}^2 \; \text{and} \; y^{(i)} \in \{-1, +1\}. \text{We will fit a logistic regression model}:\\ p(y^{(i)}| x^{(i)}) = \sigma(y^{(i)} w^T x^{(i)})," /></a>
 
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mi>p</mi>
-  <mo stretchy="false">(</mo>
-  <msup>
-    <mi>y</mi>
-    <mrow>
-      <mo stretchy="false">(</mo>
-      <mi>i</mi>
-      <mo stretchy="false">)</mo>
-    </mrow>
-  </msup>
-  <mo stretchy="false">|</mo>
-  <msup>
-    <mi>x</mi>
-    <mrow>
-      <mo stretchy="false">(</mo>
-      <mi>i</mi>
-      <mo stretchy="false">)</mo>
-    </mrow>
-  </msup>
-  <mo stretchy="false">)</mo>
-  <mo>=</mo>
-  <mi>&#x03C3;<!-- σ --></mi>
-  <mo stretchy="false">(</mo>
-  <msup>
-    <mi>y</mi>
-    <mrow>
-      <mo stretchy="false">(</mo>
-      <mi>i</mi>
-      <mo stretchy="false">)</mo>
-    </mrow>
-  </msup>
-  <msup>
-    <mi>w</mi>
-    <mi>T</mi>
-  </msup>
-  <msup>
-    <mi>x</mi>
-    <mrow>
-      <mo stretchy="false">(</mo>
-      <mi>i</mi>
-      <mo stretchy="false">)</mo>
-    </mrow>
-  </msup>
-  <mo stretchy="false">)</mo>
-  <mo>,</mo>
-</math>
-
-
-
 
 
 
