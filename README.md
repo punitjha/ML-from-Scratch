@@ -11,5 +11,5 @@ The purpose of this repo is to learn coding ML methods from scratch using Python
   - Stochastic Gradient Descent Variants - SGD with Momentum or Nesterov Accelerated Gradient, and Adam
   
 
-#References
+# References
 CS446 UIUC 
