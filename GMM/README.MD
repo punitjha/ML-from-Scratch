@@ -1,2 +1,1 @@
-![](gmm.png)
-![](download.png)
+![](gmm.PNG)![](download.png)
