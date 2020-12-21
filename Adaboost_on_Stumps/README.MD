@@ -10,5 +10,7 @@ Adaboost is described in the slides, and the concept is simple, based on a few r
 	- Run the adaboost algorithm and experiment with the number of classifiers. Plot your output using the function given in the setup code, for n_classifiers = 1, 2 and 5.
 	
 ![](step_1.png)
+
 ![](step_2.png)
+
 ![](step_3.png)
