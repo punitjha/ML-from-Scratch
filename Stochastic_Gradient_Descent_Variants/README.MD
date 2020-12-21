@@ -1,6 +1,6 @@
 ![](sgd.png)
 
-![](index1.png)
+![](index.png)
 
 ![](index2.png)
 
